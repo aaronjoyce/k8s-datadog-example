@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: my-fastapi-app
+  tag: latest
+  pullPolicy: Never
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8000
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+
+livenessProbe:
+  path: /health
+  initialDelaySeconds: 10
+  periodSeconds: 10
+
+configMap:
+  DD_AGENT_HOST: datadog-agent
