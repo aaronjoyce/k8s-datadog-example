@@ -2,15 +2,6 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-from ddtrace import tracer
-
-# # Initialize the tracer
-tracer.configure(
-    hostname="datadog",
-    enabled=True
-)
-
-
 app = FastAPI()
 
 @app.get("/")
@@ -18,7 +9,7 @@ def read_root():
     return {"Hello": "Kubernetes"}
 
 @app.get("/error")
-def read_root():
+def raise_error():
     raise Exception("This is a bad error")
     return {"Hello": "Kubernetes"}
 

@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Use the Datadog MCP Server to get comprehensive step-by-step installation instructions for the current project. You have awareness of whether the project runs directly on the host, on Docker, or Kubernetes.
