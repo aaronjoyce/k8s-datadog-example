@@ -2,14 +2,6 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-from ddtrace import tracer
-
-# # Initialize the tracer
-tracer.configure(
-    hostname="datadog",
-    enabled=True
-)
-
 
 app = FastAPI()
 
