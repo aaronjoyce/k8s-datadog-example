@@ -23,5 +23,3 @@ livenessProbe:
   initialDelaySeconds: 10
   periodSeconds: 10
 
-configMap:
-  DD_AGENT_HOST: datadog-agent
