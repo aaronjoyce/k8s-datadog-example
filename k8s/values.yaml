@@ -20,6 +20,5 @@ resources:
 
 livenessProbe:
   path: /health
-  initialDelaySeconds: 10
+  initialDelaySeconds: 60
   periodSeconds: 10
-
