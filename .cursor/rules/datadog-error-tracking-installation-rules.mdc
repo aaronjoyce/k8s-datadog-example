@@ -1,6 +1,6 @@
 ---
-description: 
+description: Datadog Error Tracking Installation
 globs: 
 alwaysApply: false
 ---
-Use the Datadog MCP Server to get comprehensive step-by-step installation instructions for the current project. You have awareness of whether the project runs directly on the host, on Docker, or Kubernetes.
+Use the Datadog MCP Server to get comprehensive step-by-step installation instructions for the current project. You should seek to infer whether the project runs directly on the host, on Docker, or Kubernetes. Do not ask the user directly. 
